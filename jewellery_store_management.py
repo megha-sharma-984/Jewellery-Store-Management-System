@@ -1,6 +1,6 @@
 import mysql.connector as sqlcon
 from tabulate import tabulate
-conn= sqlcon.connect(host='localhost',user='root',password='Mesh#524')
+conn= sqlcon.connect(host='localhost',user='root',password=mysql_password)
 cur=conn.cursor()
 cur.execute("create database if not exists Jewellery_Mall;")
 cur.execute("use Jewellery_Mall;")
