@@ -32,19 +32,29 @@ A console-based mini project developed using **Python** and **MySQL** to manage 
 
 ## How to Run
 
-1. Install MySQL Server.
+1. Install Python 3.
 2. Install the required libraries:
 
 ```bash
 pip install mysql-connector-python tabulate
 ```
 
-3. Update your MySQL username and password in the Python file.
-4. Run:
+3. Install and start MySQL Server.
+4. Update the MySQL username and password in `jewellery_store_management.py`.
+5. Follow the **Database Setup** steps for the first-time setup.
+6. Run:
 
 ```bash
 python jewellery_store_management.py
 ```
+
+## Database Setup
+
+1. Install MySQL Server and create a MySQL user.
+2. Open `jewellery_store_management.py` and update the MySQL username and password.
+3. The application automatically creates the `Jewellery_Mall` database.
+4. For the first-time setup, uncomment the `CREATE TABLE` and `INSERT INTO` statements, run the program once, and then comment them again to avoid inserting duplicate records.
+
 
 ## Future Improvements
 
